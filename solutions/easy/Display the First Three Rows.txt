@@ -1,0 +1,10 @@
+// Title: Display the First Three Rows
+            // Difficulty: Easy
+            // Language: Pandas
+            // Link: https://leetcode.com/problems/display-the-first-three-rows/
+
+import pandas as pd
+
+def selectFirstRows(df: pd.DataFrame) -> pd.DataFrame:
+    return df.head(3)
+    
