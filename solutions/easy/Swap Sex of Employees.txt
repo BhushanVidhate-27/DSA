@@ -1,0 +1,6 @@
+// Title: Swap Sex of Employees
+            // Difficulty: Easy
+            // Language: MySQL
+            // Link: https://leetcode.com/problems/swap-sex-of-employees/
+
+UPDATE Salary SET sex = IF('m'=sex,'f','m')
