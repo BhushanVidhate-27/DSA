@@ -1,0 +1,10 @@
+// Title: Modify Columns
+            // Difficulty: Easy
+            // Language: Pandas
+            // Link: https://leetcode.com/problems/modify-columns/
+
+import pandas as pd
+
+def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
+    return employees.assign(salary = employees['salary'] * 2)
+
