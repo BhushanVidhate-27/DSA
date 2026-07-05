@@ -1,0 +1,22 @@
+// Title: Number of Paths with Max Score
+            // Difficulty: Hard
+            // Language: Python3
+            // Link: https://leetcode.com/problems/number-of-paths-with-max-score/
+
+    def pathsWithMaxScore(self, board: List[str]) -> List[int]:
+        n,MOD   = len(board), int(1e9+7)
+        dps,dpw = [[-1]*(n+1) for _ in range(2)], [[0]*(n+1) for _ in range(2)]
+        for i,row in enumerate(board[::-1]):
+            r = i & 1
+            for j,c in enumerate(row[::-1]):
+                val = ord(c)-ord('0') if '0'<=c<='9'  else -1 if c=='X'  else 0
+
+                idx = [(r-1,j-1), (r-1,j), (r,j-1)]
+                mxs = max(dps[u][v] for u,v in idx)
+
+                dps[r][j] = 0 if i==j==0 else -1 if val<0 or mxs<0 else mxs+val
+                dpw[r][j] = 1 if i==j==0 else  0 if val<0 or mxs<0 else sum(
+                    dpw[u][v] for u,v in idx  if dps[u][v] == mxs
+                ) %MOD
+        return [max(0, dps[r][-2]), dpw[r][-2]]
+class Solution:
