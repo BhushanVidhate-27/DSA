@@ -1,0 +1,5 @@
+// Title: Maximum Value of an Alternating Sequence
+            // Difficulty: Unknown
+            // Language: undefined
+            // Link: https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/
+
