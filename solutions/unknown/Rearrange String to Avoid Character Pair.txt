@@ -1,0 +1,5 @@
+// Title: Rearrange String to Avoid Character Pair
+            // Difficulty: Unknown
+            // Language: undefined
+            // Link: https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/
+
