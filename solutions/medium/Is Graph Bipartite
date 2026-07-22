@@ -1,0 +1,27 @@
+// Title: Is Graph Bipartite?
+            // Difficulty: Medium
+            // Language: C++
+            // Link: https://leetcode.com/problems/is-graph-bipartite?/
+
+                    return false;
+                }else if(col[x] == col[v]) {
+                    q.push(v);
+                    col[v] = !col[x];
+                }
+            }
+        }
+        return true;
+    }
+    bool isBipartite(vector<vector<int>>& graph) {
+        int n =  graph.size();
+        vector<bool>vis(n);
+        vector<bool>col(n);
+        for(int i=0; i<n; i++) {
+            if(!vis[i]) {
+            }
+        }
+        return true;
+    }
+                    vis[v] = 1;
+                if(bfs(graph, vis, col, i) == 0) return false;
+};
