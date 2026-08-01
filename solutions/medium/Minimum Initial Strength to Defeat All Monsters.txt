@@ -1,0 +1,5 @@
+// Title: Minimum Initial Strength to Defeat All Monsters
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/
+
