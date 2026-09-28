@@ -6,13 +6,17 @@
 class Solution {
 public:
     int maxDepth(string s) {
-        int pc = 0;
-        int ans = INT_MIN;
-        for(char c: s) {
-            if(c == '(') pc++;
-            ans = max(pc, ans);
-            if(c == ')') pc--;
+        for(char c:s) {
+            if(c == '(') {
+                cnt++;
+            }
         }
-        return ans;
+            else if(c == ')') {
+                cnt--;
+            }
     }
+            ans = max(ans, cnt);
+        int ans = INT_MIN;
+        return ans;
+        int cnt = 0;
 };
